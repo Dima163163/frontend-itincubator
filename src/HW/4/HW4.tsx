@@ -32,13 +32,9 @@ export const HW4 = () => {
       ) : (
         <h1 id={'hw04-default-text'}>Здесь появится новое дело</h1>
       )}
-
       <Input currentText={currentText} setCurrentText={setCurrentText} />
-
       <Button name={'Сохранить'} callBack={handleSave} />
-
       <h1 style={{ marginTop: '50px' }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
-
       <ol id={'hw04-tasks'}>
         {texts.map((el, index) => {
           return (
